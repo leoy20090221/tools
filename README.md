@@ -20,7 +20,7 @@
 - int times3(int n) returns n * n * n.
 - int max_array(int *array, int length) find a bigest num in an array.
 - int min_array(int *array, int length) find a lowest num in an array.
-## update logs
+## Update logs
 #### 1.0.0
 + the first version
 #### 1.1.0
