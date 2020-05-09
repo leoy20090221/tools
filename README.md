@@ -1,4 +1,4 @@
-# tools
+# Tools
 ## Describe
 + This is a header file for tools.
 + This is a collection of tools.
@@ -18,6 +18,13 @@
 - int intcounts(int *ary, int len) sum an array (in int).
 - int times2(int n) returns n * n.
 - int times3(int n) returns n * n * n.
+- int max_array(int *array, int length) find a bigest num in an array.
+- int min_array(int *array, int length) find a lowest num in an array.
 ## update logs
 #### 1.0.0
-- the first version
++ the first version
+#### 1.1.0
++ added min_array()
++ added max_array()
++ added test.cpp
++ updated README.md
