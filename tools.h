@@ -2,6 +2,8 @@
 
 #define __TOOLS_H__
 
+// Version 1.1.1
+
 #include <iostream>
 #include <string>
 #include <climits>
@@ -78,17 +80,17 @@ int times3(int n) {
 	return n * n * n;
 }
 
-int min_array(int *array, int length) {
+int min_array(int *array, int len) {
 	int mini = INT_MAX;
-	for (int i = 0; i < length; i++)
+	for (int i = 0; i < len; i++)
 		if (array[i] < mini)
 			mini = array[i];
 	return mini;
 }
 
-int max_array(int *array, int length) {
+int max_array(int *array, int len) {
 	int maxi = INT_MIN;
-	for (int i = 0; i < length; i++)
+	for (int i = 0; i < len; i++)
 		if (array[i] > maxi)
 			maxi = array[i];
 	return maxi;
