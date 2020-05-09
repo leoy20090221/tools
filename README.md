@@ -28,3 +28,5 @@
 + added max_array()
 + added test.cpp
 + updated README.md
+#### 1.1.1
++ fixed bugs
