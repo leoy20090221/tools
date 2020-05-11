@@ -5,10 +5,13 @@
 // Version 1.1.1
 
 #include <iostream>
+#include <cmath>
 #include <string>
 #include <climits>
 
 using namespace std;
+
+#define PI 3.14159265
 
 bool is_prime(int num) {
 	if (num == 1) return false;
@@ -42,10 +45,18 @@ void easy_memset(bool *array, int len) {
 		array[i] = false;
 }
 
-bool is_ok(int *ary, int len) {
+bool big(int *ary, int len) {
 	for (int i = 0; i < len - 1; i++)
 		for (int j = i + 1; j < len; j++)
 			if (ary[i] > ary[j])
+				return false;
+	return true;
+}
+
+bool small(int *ary, int len) {
+	for (int i = 0; i < len - 1; i++)
+		for (int j = i + 1; j < len; j++)
+			if (ary[i] < ary[j])
 				return false;
 	return true;
 }
@@ -94,6 +105,15 @@ int max_array(int *array, int len) {
 		if (array[i] > maxi)
 			maxi = array[i];
 	return maxi;
+}
+
+double round_area(int r) {
+	return (double)PI * times2(r);
+}
+
+// may be bugs
+double more_regular_area(int l, int r) {
+	return l / (4 * tan(180 / l)) * times2(r);
 }
 
 #endif // __TOOLS_H__
