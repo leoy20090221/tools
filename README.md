@@ -1,32 +1,119 @@
-# Tools
-## Describe
-+ This is a header file for tools.
-+ This is a collection of tools.
-+ It's written in c header file.
-+ The tools may be useful.
-## Reference
-- bool is_prime(int num) calc a num is/not a prime.
-- bool is_even(int num) calc a num is/not a even.
-- bool is_odd(int num) calc a num is/not a odd.
-- void easy_memset(int *array, int len) easy memseting an array (in int).
-- void easy_memset(char *array, int len) easy memseting an array (in char).
-- void easy_memset(bool *array, int len) easy memseting an array (in bool).
-- bool is_ok(int *ary, int len) if an array (in int), all (A(i) < A(j) and j = i + 1), returns true.
-- void ccin(int *ary, int len) easy cinning an array (in int).
-- void ccin(char *ary, int len) easy cinning an array (in char).
-- void ccin(bool *ary, int len) easy cinning an array (in bool).
-- int intcounts(int *ary, int len) sum an array (in int).
-- int times2(int n) returns n * n.
-- int times3(int n) returns n * n * n.
-- int max_array(int *array, int length) find a bigest num in an array.
-- int min_array(int *array, int length) find a lowest num in an array.
-## Update logs
-#### 1.0.0
-+ the first version
-#### 1.1.0
-+ added min_array()
-+ added max_array()
-+ added test.cpp
-+ updated README.md
-#### 1.1.1
-+ fixed bugs
+#ifndef __TOOLS_H__
+
+#define __TOOLS_H__
+
+// Version 1.1.1
+
+#include <iostream>
+#include <cmath>
+#include <string>
+#include <climits>
+
+using namespace std;
+
+#define PI 3.14159265
+
+bool is_prime(int num) {
+	if (num == 1) return false;
+	if (num == 2) return true;
+	for (int i = 2; i <= num / 2 + 1; i++)
+		if (num % i == 0)
+			return false;
+	return true;
+}
+
+bool is_even(int num) {
+	return (num % 2 == 0);
+}
+
+bool is_odd(int num) {
+	return (num % 2 == 1);
+}
+
+void easy_memset(int *array, int len) {
+	for (int i = 0; i <= len; i++)
+		array[i] = 0;
+}
+
+void easy_memset(char *array, int len) {
+	for (int i = 0; i <= len; i++)
+		array[i] = '\0';
+}
+
+void easy_memset(bool *array, int len) {
+	for (int i = 0; i <= len; i++)
+		array[i] = false;
+}
+
+bool big(int *ary, int len) {
+	for (int i = 0; i < len - 1; i++)
+		for (int j = i + 1; j < len; j++)
+			if (ary[i] > ary[j])
+				return false;
+	return true;
+}
+
+bool small(int *ary, int len) {
+	for (int i = 0; i < len - 1; i++)
+		for (int j = i + 1; j < len; j++)
+			if (ary[i] < ary[j])
+				return false;
+	return true;
+}
+
+void ccin(int *ary, int len) {
+	for (int i = 0; i < len; i++)
+		cin >> ary[i];
+}
+
+void ccin(char *ary, int len) {
+	for (int i = 0; i < len; i++)
+		cin >> ary[i];
+}
+
+void ccin(bool *ary, int len) {
+	for (int i = 0; i < len; i++)
+		cin >> ary[i];
+}
+
+int intcounts(int *ary, int len) {
+	int count = 0;
+	for (int i = 0; i < len; i++)
+		count += ary[i];
+	return count;
+}
+
+int times2(int n) {
+	return n * n;
+}
+
+int times3(int n) {
+	return n * n * n;
+}
+
+int min_array(int *array, int len) {
+	int mini = INT_MAX;
+	for (int i = 0; i < len; i++)
+		if (array[i] < mini)
+			mini = array[i];
+	return mini;
+}
+
+int max_array(int *array, int len) {
+	int maxi = INT_MIN;
+	for (int i = 0; i < len; i++)
+		if (array[i] > maxi)
+			maxi = array[i];
+	return maxi;
+}
+
+double round_area(int r) {
+	return (double)PI * times2(r);
+}
+
+// may be bugs
+double more_regular_area(int l, int r) {
+	return l / (4 * tan(180 / l)) * times2(r);
+}
+
+#endif // __TOOLS_H__
