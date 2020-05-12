@@ -24,7 +24,6 @@
 - int max_array(int *array, int length) find a bigest num in an array.
 - int min_array(int *array, int length) find a lowest num in an array.
 - int round_area(int r) calculate a area using PI * r.
-- int more_regular_area(int l, int r) calculate a regular shape's area (l is how many lines, r is how long is a line).
 ## Update logs
 ### 1.0.0
 + the first version
@@ -38,4 +37,7 @@
 ### 1.2.0
 + added round_area()
 + added more_regular_area()
++ updated README.md
+### 1.2.1
+- deleted more_regular_area() which have bugs
 + updated README.md
