@@ -111,9 +111,4 @@ double round_area(int r) {
 	return (double)PI * times2(r);
 }
 
-// may be bugs
-double more_regular_area(int l, int r) {
-	return l / (4 * tan(180 / l)) * times2(r);
-}
-
 #endif // __TOOLS_H__
