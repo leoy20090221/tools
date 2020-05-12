@@ -14,6 +14,5 @@ int main(int argc, const char *argv[]) {
     cout << big(a, 5) << endl;
     cout << small(a, 5) << endl;
     cout << min_array(a, 5) << endl;
-    cout << more_regular_area(10, 10) << endl;
     return 0;
 }
