@@ -18,9 +18,8 @@ int main(int argc, const char *argv[]) {
     cout << temp_array(a, 5) << endl;
     cout << minimize(1943L) << endl;
     cout << maximize(1943L) << endl;
-    int a[9] = {3, 4, 5, 6, 7, 8, 9, 10, 11};
-    int *wei = closeimize(a, 9);
-    for (int i = 0; i < 9; i++)
+    int *wei = closeimize(a, 5);
+    for (int i = 0; i < 5; i++)
         cout << wei[i] << " ";
     cout << endl;
     return 0;
