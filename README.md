@@ -41,7 +41,7 @@
 + added round_area(), more_regular_area()
 + updated README.md
 ### 1.2.1
-- deleted more_regular_area() which have bugs
++ deleted more_regular_area() which have bugs
 + updated README.md
 ### 1.3.0
 + added temp_array(), minimize(), maximize(), closeimize()
