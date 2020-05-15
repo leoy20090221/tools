@@ -2,7 +2,7 @@
 
 #define __TOOLS_H__
 
-// Version 1.1.1
+// Version 1.3.0
 
 #include <iostream>
 #include <cmath>
