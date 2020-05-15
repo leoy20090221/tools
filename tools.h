@@ -2,7 +2,9 @@
 
 #define __TOOLS_H__
 
-// Version 1.3.0
+// Version 1.3.1
+// Updated by leoy20090221
+// All rights reserved.
 
 #include <iostream>
 #include <cmath>
