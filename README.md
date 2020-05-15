@@ -29,23 +29,25 @@
 - int maximize(int num) maximizing a num.
 - int *closeimize(int *array, int len) make an array close together, returns it(not use temprate!).
 ## Update logs
-### 1.0.0
+### 1.0.0.0
 + the first version
-### 1.1.0
+### 1.0.1.0
 + added min_array(), max_array()
 + added test.cpp
 + updated README.md
-### 1.1.1
+### 1.0.1.1
 + fixed bugs
-### 1.2.0
+### 1.0.2.0
 + added round_area(), more_regular_area()
 + updated README.md
-### 1.2.1
+### 1.0.2.1
 + deleted more_regular_area() which have bugs
 + updated README.md
-### 1.3.0
+### 1.0.3.0
 + added temp_array(), minimize(), maximize(), closeimize()
 + updated README.md
-### 1.3.1
+### 1.0.3.1
 + fixed bugs
 + updated README.md
+### 1.1.1.0
++ updated how to count version, x.x.x as x.x.x.x
