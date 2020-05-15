@@ -46,3 +46,6 @@
 ### 1.3.0
 + added temp_array(), minimize(), maximize(), closeimize()
 + updated README.md
+### 1.3.1
++ fixed bugs
++ updated README.md
