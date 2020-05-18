@@ -5,19 +5,21 @@ using namespace std;
 
 int main(int argc, const char *argv[]) {
     int a[5];
-    cout << is_even(6) << endl;
+    int n;
+    cin >> n;
     ccin(a, 5);
     for (int i = 0; i < 5; i++)
         cout << a[i] << " ";
     cout << endl;
-    cout << times2(9) << endl;
+    cout << is_even(n) << endl;
+    cout << times2(n) << endl;
     cout << big(a, 5) << endl;
     cout << small(a, 5) << endl;
     cout << min_array(a, 5) << endl;
     cout << max_array(a, 5) << endl;
     cout << temp_array(a, 5) << endl;
-    cout << minimize(1943L) << endl;
-    cout << maximize(1943L) << endl;
+    cout << minimize(n) << endl;
+    cout << maximize(n) << endl;
     int *wei = closeimize(a, 5);
     for (int i = 0; i < 5; i++)
         cout << wei[i] << " ";
