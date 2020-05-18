@@ -28,6 +28,9 @@
 - int minimize(int num) minimizing a num.
 - int maximize(int num) maximizing a num.
 - int *closeimize(int *array, int len) make an array close together, returns it(not use temprate!).
+- int array_temp_left(int *array, int len) temprating an array and find the index in left.
+- int array_temp_right(int *array, int len) temprating an array and find the index in right.
+- int array_temp_middle(int *array, int len) temprating an array and find the index.
 ## Update logs
 ### 1.0.0.0
 + the first version
@@ -51,3 +54,6 @@
 + updated README.md
 ### 1.1.1.0
 + updated how to count version, x.x.x as x.x.x.x
+### 1.1.2.0
++ added array_temp_left(), array_temp_right(), array_temp_middle()
++ updated README.md
