@@ -22,5 +22,8 @@ int main(int argc, const char *argv[]) {
     for (int i = 0; i < 5; i++)
         cout << wei[i] << " ";
     cout << endl;
+    cout << array_temp_middle(a, 5) << endl;
+    cout << array_temp_left(a, 5) << endl;
+    cout << array_temp_right(a, 5) << endl;
     return 0;
 }
