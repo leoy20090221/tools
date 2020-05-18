@@ -2,7 +2,7 @@
 
 #define __TOOLS_H__
 
-// Version 1.1.1.0
+// Version 1.1.2.0
 // Updated by leoy20090221
 // All rights reserved.
 
@@ -154,4 +154,55 @@ int *closeimize(int *array, int len) {
 	}
 	return array;
 }
+
+int array_temp_left(int *array, int len) {
+	int left = max_array(array, len);
+	int lenn = len;
+	while (left >= len) {
+		left -= lenn;
+		lenn %= abs(left) + 1;
+		if (left < 0) {
+			left = 0;
+			break;
+		}
+	}
+	return array[left];
+}
+
+int array_temp_right(int *array, int len) {
+	int right = min_array(array, len);
+	int lenn = len;
+	while (right < 0) {
+		right += lenn;
+		lenn %= abs(right) + 1;
+		if (right >= lenn) {
+			right = lenn - 1;
+			break;
+		}
+	}
+	return array[right];
+}
+
+int array_temp_middle(int *array, int len) {
+	int tempi = temp_array(array, len);
+	int lenn = len;
+	while (tempi < 0) {
+		tempi += lenn;
+		lenn %= abs(tempi) + 1;
+		if (tempi >= lenn) {
+			tempi = lenn - 1;
+			break;
+		}
+	}
+	while (tempi >= lenn) {
+		tempi -= lenn;
+		lenn %= abs(tempi) + 1;
+		if (tempi < 0) {
+			tempi = 0;
+			break;
+		}
+	}
+	return array[tempi];
+}
+
 #endif // __TOOLS_H__
