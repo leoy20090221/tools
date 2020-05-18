@@ -8,6 +8,7 @@
 #### To install, copy "tools.h" to your workspace folder.
 #### To use, add "#include "tools.h"" to your c++ file.
 ## Reference
+### tools.h
 - bool is_prime(int num) calc a num is/not a prime.
 - bool is_even(int num) calc a num is/not a even.
 - bool is_odd(int num) calc a num is/not a odd.
@@ -31,6 +32,30 @@
 - int array_temp_left(int *array, int len) temprating an array and find the index in left.
 - int array_temp_right(int *array, int len) temprating an array and find the index in right.
 - int array_temp_middle(int *array, int len) temprating an array and find the index.
+### test.cpp
+- 31 lines
+- example input:
+```
+8
+2 4 6 8 10
+```
+- example output:
+```
+2 4 6 8 10 
+1
+64
+1
+0
+2
+10
+4
+3
+13
+4 4 6 3 5 
+6
+4
+3
+```
 ## Update logs
 ### 1.0.0.0
 + the first version
@@ -56,4 +81,8 @@
 + updated how to count version, x.x.x as x.x.x.x
 ### 1.1.2.0
 + added array_temp_left(), array_temp_right(), array_temp_middle()
++ updated README.md
+### 1.1.2.1
++ fixed bugs
++ updated test.cpp locate
 + updated README.md
